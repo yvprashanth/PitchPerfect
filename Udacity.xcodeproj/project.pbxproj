@@ -13,6 +13,8 @@
 		8C41C5E91B6D3AC9002E0911 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C41C5E81B6D3AC9002E0911 /* Images.xcassets */; };
 		8C41C5EC1B6D3AC9002E0911 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C41C5EA1B6D3AC9002E0911 /* LaunchScreen.xib */; };
 		8C41C5F81B6D3AC9002E0911 /* UdacityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C41C5F71B6D3AC9002E0911 /* UdacityTests.swift */; };
+		8C41C6021B6DB612002E0911 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C41C6011B6DB612002E0911 /* PlaySoundsViewController.swift */; };
+		8CA541171B74882E00BD625E /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8CA541161B74882E00BD625E /* movie_quote.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		8C41C5F11B6D3AC9002E0911 /* UdacityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UdacityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C41C5F61B6D3AC9002E0911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C41C5F71B6D3AC9002E0911 /* UdacityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityTests.swift; sourceTree = "<group>"; };
+		8C41C6011B6DB612002E0911 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		8CA541161B74882E00BD625E /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = movie_quote.mp3; path = ../../../../Desktop/movie_quote.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 				8C41C5E11B6D3AC9002E0911 /* AppDelegate.swift */,
 				8C41C5E31B6D3AC9002E0911 /* ViewController.swift */,
 				8C41C5E51B6D3AC9002E0911 /* Main.storyboard */,
+				8C41C6011B6DB612002E0911 /* PlaySoundsViewController.swift */,
 				8C41C5E81B6D3AC9002E0911 /* Images.xcassets */,
 				8C41C5EA1B6D3AC9002E0911 /* LaunchScreen.xib */,
 				8C41C5DF1B6D3AC9002E0911 /* Supporting Files */,
@@ -90,6 +95,7 @@
 		8C41C5DF1B6D3AC9002E0911 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8CA541161B74882E00BD625E /* movie_quote.mp3 */,
 				8C41C5E01B6D3AC9002E0911 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -194,6 +200,7 @@
 			files = (
 				8C41C5E71B6D3AC9002E0911 /* Main.storyboard in Resources */,
 				8C41C5EC1B6D3AC9002E0911 /* LaunchScreen.xib in Resources */,
+				8CA541171B74882E00BD625E /* movie_quote.mp3 in Resources */,
 				8C41C5E91B6D3AC9002E0911 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C41C5E41B6D3AC9002E0911 /* ViewController.swift in Sources */,
+				8C41C6021B6DB612002E0911 /* PlaySoundsViewController.swift in Sources */,
 				8C41C5E21B6D3AC9002E0911 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +417,7 @@
 				8C41C5FD1B6D3AC9002E0911 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C41C5FE1B6D3AC9002E0911 /* Build configuration list for PBXNativeTarget "UdacityTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +426,7 @@
 				8C41C6001B6D3AC9002E0911 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
