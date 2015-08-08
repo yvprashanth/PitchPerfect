@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0PC-4K-oY4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0PC-4K-oY4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -26,9 +26,26 @@
                                     <action selector="playSlowAudio:" destination="r1I-nW-1zz" eventType="touchUpInside" id="BNP-gB-MOc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNX-fr-EOP">
+                                <rect key="frame" x="438" y="124" width="100" height="100"/>
+                                <state key="normal" image="Rabbit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAq-bg-L1D">
+                                <rect key="frame" x="438" y="124" width="100" height="100"/>
+                                <state key="normal" image="Rabbit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playFastAudio:" destination="r1I-nW-1zz" eventType="touchUpInside" id="Ry8-vd-Udi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="iAq-bg-L1D" firstAttribute="top" secondItem="GVm-1w-Q0C" secondAttribute="bottom" constant="60" id="M6n-aj-Twr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iAq-bg-L1D" secondAttribute="trailing" constant="46" id="bVK-s4-zOY"/>
                             <constraint firstItem="ogF-en-LtO" firstAttribute="leading" secondItem="2q8-3I-FrZ" secondAttribute="leadingMargin" constant="40" id="oqK-0e-JRo"/>
                             <constraint firstItem="ogF-en-LtO" firstAttribute="top" secondItem="GVm-1w-Q0C" secondAttribute="bottom" constant="60" id="qrX-90-Gkh"/>
                         </constraints>
@@ -38,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="1516" y="-378"/>
         </scene>
-        <!--View Controller-->
+        <!--Record Sounds View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Udacity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="RecordSoundsViewController" customModule="Udacity" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -72,7 +89,6 @@
                                 </state>
                                 <connections>
                                     <action selector="stopRecord:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EYh-2w-F7e"/>
-                                    <segue destination="r1I-nW-1zz" kind="show" id="JOE-bV-Tf3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -91,6 +107,7 @@
                         <outlet property="recordButton" destination="qTb-NG-P1s" id="doR-1r-EqZ"/>
                         <outlet property="recordingInProgress" destination="Ida-mM-i2e" id="qp7-UL-SyC"/>
                         <outlet property="stopButton" destination="pSB-fk-e1S" id="nhj-eu-Jsl"/>
+                        <segue destination="r1I-nW-1zz" kind="show" identifier="stopRecord" id="gIB-qG-5V2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -118,6 +135,7 @@
     </scenes>
     <resources>
         <image name="Microphone" width="100" height="100"/>
+        <image name="Rabbit" width="100" height="100"/>
         <image name="Snail" width="100" height="100"/>
         <image name="Stop" width="50" height="50"/>
     </resources>
